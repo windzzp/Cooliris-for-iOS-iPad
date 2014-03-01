@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>动画类型</key>
+		<array>
+			<string>渐隐</string>
+			<string>相机效果</string>
+			<string>水波纹</string>
+			<string>吸入</string>
+			<string>旋转</string>
+			<string>平移</string>
+			<string>推入</string>
+			<string>推出</string>
+			<string>3D立方体1</string>
+			<string>3D立方体2</string>
+			<string>3D翻转1</string>
+			<string>3D翻转2</string>
+			<string>翻书1</string>
+			<string>翻书2</string>
+		</array>
+	</dict>
+	<dict>
+		<key>动画方向</key>
+		<array>
+			<string>从右向左</string>
+			<string>从左向右</string>
+			<string>从上向下</string>
+			<string>从下向上</string>
+		</array>
+	</dict>
+	<dict>
+		<key>播放间隔</key>
+		<array>
+			<string>5秒</string>
+			<string>10秒</string>
+			<string>30秒</string>
+			<string>1分钟</string>
+		</array>
+	</dict>
+	<dict>
+		<key>播放顺序</key>
+		<array>
+			<string>顺序播放</string>
+			<string>随机播放</string>
+		</array>
+	</dict>
+</array>
+</plist>

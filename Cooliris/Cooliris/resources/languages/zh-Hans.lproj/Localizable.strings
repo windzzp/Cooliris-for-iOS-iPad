@@ -1,0 +1,87 @@
+/* 
+  Localizable.strings
+  Cooliris
+
+  Created by user on 13-5-21.
+  Copyright (c) 2013年 user. All rights reserved.
+*/
+
+"no_more_images"="没有更新的图片了...";
+"no_more_old_images"="没有更旧的图片了...";
+
+"cancel" = "取消";
+"ok" = "确定";
+
+"dialog_msg_save_image_success_title" = "存储照片成功";
+"dialog_msg_save_image_success_content" = "您已将照片存储于图片库中，请到\“照片\”中查看和操作。";
+"dialog_msg_save_image_failed_title" = "存储照片失败";
+"dialog_msg_save_image_failed_content" = "请在隐私设置中设置允许程序访问照片库。";
+
+"dialog_msg_cancel_favorite_title" = "收藏提示";
+"dialog_msg_cancel_favorite_content" = "确定要取消收藏吗？";
+
+"change_to_internet"="请点选Tag或切换到网络模式再搜索！！！";
+"local_no_image"="本地没有，您可以尝试切换到网络搜索!";
+"local_get_image"="从本地读取%d张图片";
+"net_get_image"="本次从网络搜索到%d张图片";
+"on_image_try"="搜到0张图片，正努力为您搜索，再试一下？";
+"current_tag_load_all"="当前Tag图片已加载完";
+"local_search_click_tag"="您选择了本地搜索，请点击tag进行搜索！";
+"search_type" = "搜索范围";
+"net" = "网络";
+"local" = "本地";
+"net_search"="网络搜索";
+"local_search"="本地搜索";
+"resolution"="分辨率";
+"resolution_all"="不限";
+"search"="搜索内容";
+"search_option"="搜索项";
+"theme"="主题";
+
+"favourite"="个人收藏";
+"setting"="设置";
+"SlideShow" = "幻灯片";
+
+"release_to_refresh" = "松开立即更新...";
+"pull_down_to_refresh" = "下拉可以更新...";
+"loading" = "正在加载...";
+"last_updated" = "最后更新于";
+
+"cache"="缓存";
+"current_cache"="当前缓存: %.2fMB";
+"clear_cache"="清空缓存";
+"slideshow"="幻灯片";
+"slideshow_setting"="幻灯片设置";
+"layout"="布局";
+"grid_layout"="网格布局";
+"water_flow"="瀑布流布局";
+"linear_layout"="线性布局";
+"detail" = "详细信息";
+"show_detail" = "显示详细信息";
+"about"="关于";
+"about_us"="关于我们";
+"advice"="意见反馈";
+"welcome"="开启图片浏览之旅";
+"version"="当前版本";
+"author_title"="官方网址:";
+"author"="www.lzt.com.cn";
+"contact_title"="官方邮箱:";
+"contact"="woyaowenzi@126.com";
+"address_title"="联系地址:";
+"address"="北京市海淀区知春路量子银座11F";
+
+"clear_dialog_title"="缓存提示";
+"sure_to_clear"="您确定清空缓存吗？";
+"feedback_advice" = "您的意见或建议: ";
+
+"slide_setting_direction_rotate_clock_wise_90" = "顺时针90度";
+"slide_setting_direction_rotate_unclock_wise_90" = "逆时针90度";
+"slide_setting_direction_rotate_clock_wise_180" = "顺时针180度";
+"slide_setting_direction_rotate_unclock_wise_180" = "逆时针180度";
+
+"group_changing_next" = "下一图集";
+"group_changing_previous" = "上一图集";
+"group_description_category" = "分类";
+"group_description_tag" = "标签";
+
+

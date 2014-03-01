@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>default_page</key>
+	<array>
+		<dict>
+			<key>主题</key>
+			<array>
+				<string>全部</string>
+				<string>插画</string>
+				<string>摄影</string>
+				<string>生活</string>
+				<string>灵感</string>
+				<string>设计</string>
+				<string>下载</string>
+				<string>教程</string>
+				<string>原创</string>
+			</array>
+		</dict>
+		<dict>
+			<key>收藏</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>搜索</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

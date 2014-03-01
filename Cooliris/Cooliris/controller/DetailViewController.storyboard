@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="CVe-1d-UE8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="edl-fc-d8Q">
+            <objects>
+                <viewController id="CVe-1d-UE8" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MR7-d3-1Zq">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="GEa-v7-7VN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jbc-qw-sSU">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ZoomImageCell" id="HZr-Ao-dTW" customClass="ZoomImageCell">
+                                        <rect key="frame" x="10" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4zE-2t-wgg">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="LHw-7l-LTW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="Jwe-6P-fSc">
+                                                            <rect key="frame" x="132" y="221" width="37" height="37"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </activityIndicatorView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="HZr-Ao-dTW" id="kUd-rD-kbs"/>
+                                                    </connections>
+                                                </scrollView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="imageView" destination="LHw-7l-LTW" id="zRN-it-yDB"/>
+                                            <outlet property="indicator" destination="Jwe-6P-fSc" id="8Bh-7F-gcD"/>
+                                            <outlet property="zoomView" destination="4zE-2t-wgg" id="LFa-Ag-LFJ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="CVe-1d-UE8" id="djb-Jp-4jx"/>
+                                    <outlet property="delegate" destination="CVe-1d-UE8" id="kSz-Pd-6Kp"/>
+                                </connections>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rrK-rb-OxV">
+                                <rect key="frame" x="0.0" y="450" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qv5-84-0vP">
+                                        <rect key="frame" x="20" y="5" width="280" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="5ke-cL-gUD">
+                                        <rect key="frame" x="20" y="26" width="280" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="Icon_clock.png" id="vvr-7h-Kwb">
+                                                <rect key="frame" x="-7" y="0.0" width="23" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LWr-g6-R1X">
+                                                <rect key="frame" x="20" y="-1" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="Icon_category.png" id="DTT-Fg-LJ7">
+                                                <rect key="frame" x="63" y="0.0" width="19" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhX-KO-vqf">
+                                                <rect key="frame" x="90" y="0.0" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" image="Icon_tag.png" id="gy5-6a-oUI">
+                                                <rect key="frame" x="140" y="0.0" width="24" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hZW-03-Iu7">
+                                                <rect key="frame" x="172" y="0.0" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GOH-Jd-ybn">
+                                        <rect key="frame" x="20" y="47" width="280" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <navigationBar alpha="0.30000000000000016" contentMode="scaleToFill" barStyle="blackTranslucent" id="tOO-Ts-PSF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="groupDescriptionCategory" destination="bhX-KO-vqf" id="UGw-Vp-CFI"/>
+                        <outlet property="groupDescriptionCategoryImage" destination="DTT-Fg-LJ7" id="RpV-6g-QgI"/>
+                        <outlet property="groupDescriptionContent" destination="GOH-Jd-ybn" id="Dl9-EB-UCB"/>
+                        <outlet property="groupDescriptionScrollView" destination="rrK-rb-OxV" id="7Mu-LZ-Q3D"/>
+                        <outlet property="groupDescriptionSubtitle" destination="5ke-cL-gUD" id="Ws4-r2-ytp"/>
+                        <outlet property="groupDescriptionTag" destination="hZW-03-Iu7" id="iuG-za-jOJ"/>
+                        <outlet property="groupDescriptionTagImage" destination="gy5-6a-oUI" id="NGX-Cc-tlg"/>
+                        <outlet property="groupDescriptionTime" destination="LWr-g6-R1X" id="AFJ-OI-89E"/>
+                        <outlet property="groupDescriptionTimeImage" destination="vvr-7h-Kwb" id="hzC-Bm-jzR"/>
+                        <outlet property="groupDescriptionTitle" destination="qv5-84-0vP" id="dV6-tt-Ykl"/>
+                        <outlet property="imageCollectionView" destination="GEa-v7-7VN" id="oyA-OX-cIK"/>
+                        <outlet property="navigationBar" destination="tOO-Ts-PSF" id="ybf-al-rm2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kx-nG-MFK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="-110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon_category.png" width="13" height="13"/>
+        <image name="Icon_clock.png" width="13" height="13"/>
+        <image name="Icon_tag.png" width="13" height="13"/>
+    </resources>
+    <classes>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addToFavorite:"/>
+                <relationship kind="action" name="backToGridView:"/>
+                <relationship kind="action" name="downloadPhoto:"/>
+                <relationship kind="action" name="goToNextGroup:"/>
+                <relationship kind="action" name="goToPreviousGroup:"/>
+                <relationship kind="action" name="rotatePhoto:"/>
+                <relationship kind="action" name="sharePhoto:"/>
+                <relationship kind="action" name="slideShow:"/>
+                <relationship kind="outlet" name="groupDescriptionCategory" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="groupDescriptionCategoryImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="groupDescriptionContent" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="groupDescriptionScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="groupDescriptionSubtitle" candidateClass="UIView"/>
+                <relationship kind="outlet" name="groupDescriptionTag" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="groupDescriptionTagImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="groupDescriptionTime" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="groupDescriptionTimeImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="groupDescriptionTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageCollectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="navigationBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+        <class className="ZoomImageCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ZoomImageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="indicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="zoomView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
